@@ -60,7 +60,7 @@
 			return false;
 		} 
 		function sesrchWeatherByCity(latCity,lonCity){
-			var my_url = ("api.openweathermap.org/data/2.5/forecast/daily?lat="+latCity+"&lon="+lonCity+"&cnt=7&appid=e4fe6d6131a111917eb64384959c08ff");
+			var my_url = ("http://api.openweathermap.org/data/2.5/forecast/daily?lat="+latCity+"&lon="+lonCity+"&cnt=7&appid=e4fe6d6131a111917eb64384959c08ff");
 			requestCity.open("GET", my_url, true);
 			requestCity.responseType = "json";
 			requestCity.onreadystatechange = function () {
